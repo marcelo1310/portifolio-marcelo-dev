@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+ display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#app {
+  font-family: "Arial", sans-serif;
+  width: 100%;
+}
+
+:root {
+  --branco: #fefefe;
+  --vermelho:#FD3A2D ;
+  --grafite:#212529;
+  --cinza1: #343a40;
+  --cinza2: #909294;
+}
+
+/* #c23112*/
