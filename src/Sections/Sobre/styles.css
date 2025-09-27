@@ -13,7 +13,6 @@
   font-size: 2.5rem;
   width: 100%;
   text-align: center;
-  color: var(--verde);
 }
 
 .area-sobre {
@@ -40,7 +39,7 @@
 }
 
 .sobre-texto span {
-  color: var(--vermelho);
+  color: var(--destaque);
 }
 
 .area-infos {
@@ -80,7 +79,7 @@
 
 .minhas-infos a {
   text-decoration: none;
-  color: var(--vermelho);
+  color: var(--destaque);
 }
 .btn {
   display: flex;

@@ -6,7 +6,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 55px;
   color: var(--branco);
   padding: 1rem;
   z-index: 10;
@@ -27,18 +27,18 @@
 .header-logo {
   font-weight: bold;
   z-index: 20;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: var(--branco);
-  padding: 10px;
+  padding: 7px;
 }
 
 .menu-toggle {
   border: none;
   color: var(--branco);
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   z-index: 20;
   background-color: transparent;
 }
@@ -49,7 +49,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 50%;
+  height: 400px;
   width: 100%;
   transform: translateY(-50px);
   transition: transform 0.8s ease, opacity 0.8s ease;
@@ -64,7 +64,7 @@
   display: flex;
   margin-top: 60px;
   flex-direction: column;
-  padding: 3rem;
+  padding: 8px;
 }
 
 .header-nav li {
@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-.header-nav a {
+.header-link {
   color: var(--branco);
   text-decoration: none;
   width: 100%;
@@ -83,7 +83,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    color: var(--vermelho);
+    color: var(--destaque);
   }
 }
 
@@ -93,6 +93,12 @@
   pointer-events: auto;
 }
 
+.btn-header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
 
 
 
@@ -139,6 +145,10 @@
   .header-nav li {
     border: none;
     width: fit-content;
+  }
+
+  .btn-header {
+  display: none;
   }
 }
 

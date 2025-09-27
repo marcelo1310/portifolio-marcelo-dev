@@ -35,7 +35,7 @@
 
 .info-contato i {
   margin-right: 0.5rem;
-  color: var(--vermelho);
+  color: var(--destaque);
 }
 
 .redes-sociais i {
@@ -44,7 +44,7 @@
   color: var(--branco);
 }
 .redes-sociais i:hover {
-  color: var(--vermelho);
+  color: var(--destaque);
   transform: scale(1.2);
   transition: all 0.3s ease;
 }

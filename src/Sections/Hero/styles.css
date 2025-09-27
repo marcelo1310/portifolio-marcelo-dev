@@ -45,7 +45,7 @@
   width: 200px;
   height: 200px;
   aspect-ratio: 1/1;
-  background-color: var(--vermelho);
+  background-color: var(--destaque);
 }
 
 .hero-area-img img {
@@ -69,7 +69,7 @@
 }
 
 .hero-text span {
-  color: var(--vermelho);
+  color: var(--destaque);
 }
 
 .hero-text {

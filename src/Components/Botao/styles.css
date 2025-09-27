@@ -1,9 +1,10 @@
 .botao {
-  padding: 12px 30px;
+  padding: 10px 30px;
   text-decoration: none;
+  text-align: center;
   border-radius: 10px;
   transition: background-color 0.3s;
-  background-color: var(--vermelho);
+  background-color: var(--destaque);
   color: var(--branco);
   font-weight: bold;
   transition: box-shadow 0.3s ease;
@@ -18,12 +19,13 @@
   animation: sombra-pulsante 2s infinite alternate;
 }
 
+
 @keyframes sombra-pulsante {
   0% {
-    box-shadow: 0 0 5px rgba(194, 49, 18, 0.3);
+    box-shadow: 0 0 5px rgba(43, 88, 222, 0.2);
   }
   100% {
-    box-shadow: 0 0 20px 10px rgba(194, 49, 18, 0.5);
+    box-shadow: 0 0 20px 10px rgba(43, 88, 222, 0.5);
   }
 }
 

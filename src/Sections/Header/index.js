@@ -1,12 +1,12 @@
 import "./styles.css";
-
+import { Botao } from "../../Components/Botao";
 export function Header() {
   const header = document.createElement("header");
   header.innerHTML = `
   <div id="header" class="header-container">
     <div class="header-area">
       <a href="#" class="header-logo">MS</a>
-      <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+      <button class="menu-toggle" aria-label="Abrir Menu"><i class="fa-solid fa-bars"></i></button>
       <nav class="header-nav">
         <ul>
           <li><a class="header-link" href="#hero">Início</a></li>
@@ -23,6 +23,8 @@ export function Header() {
   const toggle = header.querySelector(".menu-toggle");
   const menu = header.querySelector(".header-nav");
   const links = header.querySelectorAll(".header-link");
+  const btnHeader = Botao("Falar no WhatsApp", "https://wa.me/5511999999999");
+  header.querySelector(".btn-header").appendChild(btnHeader);
 
   toggle.addEventListener("click", () => {
     menu.classList.toggle("show");
