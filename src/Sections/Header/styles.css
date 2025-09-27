@@ -126,6 +126,7 @@
     position: static;
     transform: none;
     opacity: 1;
+    height: 100%;
     pointer-events: auto;
     flex-direction: row;
     padding: 0;

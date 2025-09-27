@@ -1,6 +1,6 @@
 .contato-container {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 0;
   min-width: 100%;
   max-width: 100%;
   background-color: var(--cinza1);
@@ -30,7 +30,7 @@
   width: 100%;
   gap: 1.5rem;
   margin: 3rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .info-contato i {
