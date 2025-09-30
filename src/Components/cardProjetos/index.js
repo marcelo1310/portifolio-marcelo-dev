@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export function CardProjetos(src, titulo, descricao, link) {
+export function CardProjetos(src, titulo, descricao, linkProjeto, linkGithub) {
   const card = document.createElement("div");
   card.className = "projeto-item";
   card.innerHTML = `
@@ -10,8 +10,8 @@ export function CardProjetos(src, titulo, descricao, link) {
         <p>${descricao}</p>
     </div>
     <div class="projeto-link">
-        <a href="${link}" target="_blank"><i class="fa-solid fa-link"></i></a>
-         <a href="${link}" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="${linkProjeto}" target="_blank"><i class="fa-solid fa-link"></i></a>
+         <a href="${linkGithub}" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
   `;
 
