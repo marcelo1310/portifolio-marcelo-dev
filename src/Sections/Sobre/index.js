@@ -30,7 +30,7 @@ export function Sobre() {
     </div>
   `;
 
-  const btnChamada = Botao("Fale no WhatsApp", "#contato", "animacao-sombra");
+  const btnChamada = Botao("Fale no WhatsApp", "https://wa.me/message/B3VCHP5M4BW5E1", "animacao-sombra");
     sobre.querySelector(".btn").appendChild(btnChamada);
   return sobre;
 }

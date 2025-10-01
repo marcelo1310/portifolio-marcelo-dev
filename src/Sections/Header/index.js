@@ -5,8 +5,8 @@ export function Header() {
   header.innerHTML = `
   <div id="header" class="header-container">
     <div class="header-area">
-      <a href="#" class="header-logo">MS</a>
-      <button class="menu-toggle" aria-label="Abrir Menu"><i class="fa-solid fa-bars"></i></button>
+      <a href="#" class="header-logo"><i class="fa-solid fa-mug-saucer"></i></a>
+      <button class="menu-toggle" aria-label="Abrir Menu"></button>
       <nav class="header-nav">
         <ul>
           <li><a class="header-link" href="#hero">Início</a></li>
@@ -23,11 +23,19 @@ export function Header() {
   const toggle = header.querySelector(".menu-toggle");
   const menu = header.querySelector(".header-nav");
   const links = header.querySelectorAll(".header-link");
-  const btnHeader = Botao("Falar no WhatsApp", "https://wa.me/5511999999999");
+  const btnHeader = Botao("Falar no WhatsApp", "https://wa.me/message/B3VCHP5M4BW5E1");
   header.querySelector(".btn-header").appendChild(btnHeader);
+
+  const icon = document.createElement("i");
+  icon.className = "fa-solid fa-bars";
+  toggle.appendChild(icon);
 
   toggle.addEventListener("click", () => {
     menu.classList.toggle("show");
+
+    icon.className = menu.classList.contains("show")
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars";
   });
 
   links.forEach((link) => {

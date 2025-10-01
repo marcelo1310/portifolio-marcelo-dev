@@ -6,6 +6,7 @@ export function Botao(texto, link, animacao) {
   botao.href = link;
   botao.classList.add("botao");
   botao.classList.add(animacao);
+  botao.target = "_blank";
 
   return botao;
 }

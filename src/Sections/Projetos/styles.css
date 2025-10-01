@@ -3,11 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  width: 100%;
   background-color: var(--grafite);
   color: var(--branco);
   padding: 2rem 8px;
-
 }
 
 .area-projetos {
@@ -35,18 +34,9 @@
 .projetos-lista {
   display: grid;
   grid-template-columns: repeat(1, minmax(300px, 1fr));
-  align-self: stretch;
-  width: 100%;
   margin-top: 2rem;
+  justify-items: center;
 }
-
-@media (min-width: 500px) {
- .area-projetos{
-    max-width: 95%;
-  }
- }
-
-
 
 @media (min-width: 768px) {
   .projetos-texto {
@@ -58,20 +48,13 @@
     padding: 1rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .area-projetos {
-    max-width: 90%;
+    max-width: 1200px;
   }
   .projetos-lista {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 1rem;
     padding: 0;
   }
-}
-
-@media (min-width: 1440px) {
-  .area-projetos {
-    max-width: 70%;
-  }
-
 }

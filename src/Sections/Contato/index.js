@@ -28,7 +28,7 @@ export function Contato() {
     </div>
   `;
 
-   const btnContato = Botao("Fale no WhatsApp", "#contato");
+   const btnContato = Botao("Fale no WhatsApp", "https://wa.me/message/B3VCHP5M4BW5E1");
       contato.querySelector(".btn-contato").appendChild(btnContato);
   return contato;
 }

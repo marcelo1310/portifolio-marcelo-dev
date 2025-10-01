@@ -27,10 +27,14 @@
 .header-logo {
   font-weight: bold;
   z-index: 20;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: var(--branco);
   padding: 7px;
+
+  &:hover {
+    color: #9a7b4f;
+  }
 }
 
 .menu-toggle {
@@ -100,8 +104,6 @@
   width: 100%;
 }
 
-
-
 @media (min-width: 1024px) {
   .header-container {
     height: 60px;
@@ -110,11 +112,10 @@
 
   .header-area {
     max-width: 90%;
-    
   }
 
   .header-logo {
-      margin: 5px 1rem;
+    margin: 5px 1rem;
   }
 
   .menu-toggle {
@@ -149,7 +150,7 @@
   }
 
   .btn-header {
-  display: none;
+    display: none;
   }
 }
 
